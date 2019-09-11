@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập mảng</title>
+</head>
+<body>
+<script>
+    let mangSoNguyen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let max = mangSoNguyen[0];
+    let sum = 0;
+    for (let d = 0; d <= mangSoNguyen.length; d++) {
+        if (max < mangSoNguyen[d]) {
+            max = mangSoNguyen[d];
+            sum = (sum+d)/mangSoNguyen.length;
+        }
+    }
+    document.write("Max is " +max)
+    document.write("<br>")
+    document.write("Medium is " +sum)
+</script>
+</body>
+</html>
